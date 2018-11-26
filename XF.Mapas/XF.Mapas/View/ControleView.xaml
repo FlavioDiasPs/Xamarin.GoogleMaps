@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mapa="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"             
+             x:Class="XF.Mapas.View.ControleView">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnHybrid" Text="Hybrid" Clicked="btnHybrid_Clicked" />
+                <Button x:Name="btnSatellite" Text="Satellite" Clicked="btnSatellite_Clicked" />
+                <Button x:Name="btnStreet" Text="Street" Clicked="btnStreet_Clicked" />
+            </StackLayout>
+            <StackLayout>
+                <Slider x:Name="sldZoom" Value="5" Minimum="0" Maximum="18"
+                        ValueChanged="sldZoom_ValueChanged" />
+            </StackLayout>
+            <mapa:Map x:Name="meuMapa" MapType="Street" 
+                      VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

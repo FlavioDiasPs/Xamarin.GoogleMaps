@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XF.Mapas.App_Code"
+             x:Class="XF.Mapas.View.MapaDemarcadoView">
+    <ContentPage.Content>
+        <StackLayout>
+            <local:MapaCustomizado x:Name="meuMapa" MapType="Street" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

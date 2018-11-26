@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XF.Mapas"
+             x:Class="XF.Mapas.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button Text="Mapa" Clicked="OnMapa_Clicked" />
+        <Button Text="Controle" Clicked="OnControle_Clicked" />
+        <Button Text="Localização" Clicked="OnLocalizacao_Clicked" />
+        <Button Text="Marcar (Pin)" Clicked="OnMarcar_Clicked" />
+        <Button Text="Área Demarcada" Clicked="OnDemarcado_Clicked" />
+        <Button Text="Pin Customizado" Clicked="OnPinCustomizado_Clicked" />
+        <Button Text="Sensor GPS" Clicked="OnGPS_Clicked" />
+    </StackLayout>
+
+</ContentPage>

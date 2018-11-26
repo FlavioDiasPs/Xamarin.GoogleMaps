@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.Mapas.View.GPSView"
+             Title="GPS - Localização">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Recuperar Localização" FontAttributes="Bold" Margin="12" />
+
+            <ScrollView>
+                <StackLayout Padding="12" Spacing="6">
+                    <Label Text="Última localização:" FontAttributes="Bold" Margin="0,6,0,0" />
+                    <Label x:Name="lblUltimaLocal" />
+                    <Button Text="Atualizar" Clicked="GetLocalizacao_Clicked" />
+
+                    <Label Text="Localização:" FontAttributes="Bold" Margin="0,6,0,0" />
+                    <Label x:Name="lblLocalizacao" />
+                    <Label Text="Precisão:" />
+                    <Picker x:Name="pkrAccuracies" HorizontalOptions="FillAndExpand" />
+                    <Button Text="Atualização" Clicked="GetLocalizacaoAtual_Clicked" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
